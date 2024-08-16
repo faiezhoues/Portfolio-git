@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     font-family: DM Sans;
 }
@@ -12,63 +12,73 @@ body{
    }
 
    header{
-    margin-left: 2rem;
-    margin-top: 2rem;
-  background-color: #020202;
-    height: 2rem;
-    display: flex;
-    justify-content: space-between;
-align-items: center;
-    color:#fff;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap:10rem;
+   color: #fff;
+   
    }
 
 
 .links ul{
    display: flex;
    gap: 2rem;
-   
- ;
-   
+   list-style-type: none;  
 }
-.container{
-    width: 80%;
+
+main {
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    color: #fff;
+}
+main .content-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
 
 }
 
 .container-text{
     flex: 1;
-    margin: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content:center;
     gap: 1rem;
+}
+
+.container-text p , h6 , .div-button{
+    display: flex;
+    justify-content:center;
+}
+
+.div-button{
+    
+        display: flex;
+        gap: 2rem;     
+ 
 }
 
 .container-img{
     flex: 1;
     display: flex;
     justify-content: center;
-   
+    max-width: 80%;
+    max-height: 80%; 
 }
 .container-img img{
-    margin: 50px;
-    width:400px;
-    height:400px;
-    border-radius:50% ;
-    border: #020202 solid;
-    border: gray;
-    padding: 10px;
-}
-
-.div-button{
-    display: flex;
-    gap: 10px;
+   max-width:70%;
+   max-width: 70%;
+   border-radius:50% ;
   
-
+    
 }
+
+
 .container-text .div-button button{
     width: 100px;
     height: 30px;
@@ -87,27 +97,132 @@ align-items: center;
 }
 
 .About-content{
-    margin-top: 3rem;
-    margin-left:8rem;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     color: #fff;
+   margin-left: 10rem ;
 }
 
-.About-content h1 ,h3,#aycons{
+.About-content h1,h3{
     display: flex;
+    justify-content: center;
+    
+}
+
+#aycons{
+    display:flex;
+    justify-content: center;
+    gap: 5rem;
+    color: #fff;
+}
+
+#aycons button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #27AE60;
+    border: solid rgb(53, 52, 52) 10px;
+    
+}
+
+#aycons div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caret-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #535353;
+}
+
+.carts{
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+}
+.caret-content .carts div {
+    width: 200px;
+    height:150px;
+    background-color: #212121;
+}
+.caret-content div img{
+    margin-top: 0.5rem;
+    margin-left:1rem ;
+}
+
+.myskils-content{
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.myskils-content div {
+    width: 80%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #333333;
+}
+
+.myskils-content .Skills{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.myskils-content h1{
+    color: #FFFFFF;
+}
+
+
+.myskils-content .Skills h3 {
+    color: #27AE60;
+    
+}
+
+.myskils-content .Skills h1{
+    color:#4F4F4F ;
+    font-family: DM Sans;
+    font-size: 72px;
+}
+
+footer{
+    height: 100px;
+    margin-right:5rem ;
+    color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.touch-content{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap:5rem ;
+}
+
+.touch-content #inputs{
+    display: flex;
+    flex-direction:column ;
     justify-content: center;
     gap: 2rem;
 }
-
-#aycons img{
-    width: 50px;
-    height: 50px;
-}
-.aycons-clik{
-    display: flex;
-    flex-direction: column;
-    
+.touch-content #inputs input{
+    background-color:#4F4F4F ;
+    border: none;
 }
